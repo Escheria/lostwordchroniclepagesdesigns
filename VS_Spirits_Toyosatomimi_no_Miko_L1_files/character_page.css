@@ -1,0 +1,141 @@
+div.bullet {
+    border: 2px solid;
+    border-radius: 50px 0 0 50px;
+}
+
+div.yin-yang-amount-0 {
+    color: #FEFEFE;
+    background-color: #000000;
+}
+
+div.yin-yang-amount-1 {
+    color: #000000;
+    background-color: #FEFEFE;
+}
+
+div.power-scale-0 {
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+div.power-scale-1 {
+    background-color: #FCBA36;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+div.power-scale-2 {
+    background-color: #FC7836;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+div.power-scale-3 {
+    background-color: #FC3636;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+.pre-effects {
+    background-color: #FB4E30;
+}
+
+.post-effects {
+    background-color: #029DE2;
+}
+
+div.attack-type {
+    border: 2px solid #345260;
+    background-color: #416679;
+    border-radius: 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+div.bullet-stat-display-label {
+    border: 2px solid #345260;
+    background-color: #416679;
+    border-right: none;
+    border-radius: 50px 0 0 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+div.bullet-stat-display-value {
+    border: 2px solid #CECEC0;
+    background-color: #FFFFEB;
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+    text-align: center;
+    color: #426579;
+}
+
+div.stat-display-label {
+    border: 2px solid #345260;
+    background-color: #416679;
+    border-right: none;
+    border-radius: 50px 0 0 50px;
+    color: #FFFFFF;
+    min-width: 100px;
+    text-align: center;
+}
+
+div.stat-display-value {
+    border: 2px solid #CECEC0;
+    background-color: #FFFFEB;
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+    min-width: 100px;
+    text-align: center;
+    color: #426579;
+}
+
+.story-card-recommendation-grid {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns:
+        [story-card-begin] 30% [story-card-end name-begin] auto [name-end value-begin] 20% [value-end];
+    grid-template-rows:
+        [header-begin] auto [header-end body-begin] 30vh [body-end];
+}
+
+.story-card-recommendation-rows {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns:
+        [story-card-begin] 30% [story-card-end name-begin] auto [name-end value-begin] 10% [value-end];
+}
+
+.compare-grid {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns:
+        auto auto auto;
+}
+
+.story-card-suggestion-container {
+    max-height: 50vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.story-card-suggestion-container td {
+    align-content: center;
+}
+
+.killer-information-grid {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: auto auto auto auto;
+}

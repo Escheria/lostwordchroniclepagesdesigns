@@ -1,0 +1,391 @@
+@font-face {
+	font-family: "OPTIOptionMedium"; 
+	src: url('../fonts/OPTIOptionMedium.otf') format('opentype'); 
+}
+
+@font-face {
+	font-family: "Philosopher"; 
+	src: url('../fonts/Philosopher-Bold.ttf') format('truetype'); 
+}
+
+@font-face {
+	font-family: "Galderglynn"; 
+	src: url('../fonts/galderglynn_titling_bd.ttf') format('truetype'); 
+}
+
+body {
+    font-family: "Philosopher";
+}
+
+.text-outlined {
+    font-family: "Galderglynn";
+    color: black;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 0.4px;
+    pointer-events: none;
+}
+
+.layout-left-margin, .layout-right-margin  {
+    display: none;
+}
+
+.expand-phone-layout {
+    min-width: 100%;
+}
+
+@media (min-aspect-ratio: 12/10) {
+    .layout-left-margin, .layout-right-margin  {
+        display: block;
+        min-width: clamp(7vw, 10vw, 126px);
+        z-index: 5;
+    }
+
+    .top-menu {
+        display: none;
+    }
+
+    .expand-phone-layout {
+        min-width: unset;
+    }
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.thlw-font {
+    font-family: "OPTIOptionMedium";
+}
+
+.thlw-dialog-container {
+    position: relative;
+    padding: 14px 0px;
+}
+
+.thlw-dialog-container > .thlw-dialog-box {
+    background-color: #EAE8E3;
+    color: #323232;
+    padding: 16px 25px;
+    border-radius: 999px;
+    box-shadow: inset 0px 0px 2px 0px #000;
+    font-family: "OPTIOptionMedium" !important;
+    letter-spacing: 0.03em;
+}
+
+.thlw-dialog-container > .thlw-name-box {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background-color: #4B5C6F;
+    color: #ECF8FF;
+    padding: 2px 10px;
+    box-shadow: inset 0px 0px 2px 0px #FFF;
+    font-family: "OPTIOptionMedium" !important;
+    letter-spacing: 0.03em;
+    text-wrap: nowrap;
+}
+
+.thlw-name-box::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 16px;
+    height: 100%;
+    background-color: #4B5C6F;
+    clip-path: polygon(100% 0, 50% 0, 0 50%, 50% 100%, 100% 100%);
+}
+
+.thlw-name-box::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 16px;
+    height: 100%;
+    background-color: #4B5C6F;
+    clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0 100%);
+}
+
+html {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+div.attribute-1 {
+    background-color: #D3B145;
+}
+
+div.attribute-2 {
+    background-color: #7D5A9A;
+}
+
+div.attribute-3 {
+    background-color: #CE3931;
+}
+
+div.attribute-4 {
+    background-color: #30ADAA;
+}
+
+div.attribute-5 {
+    background-color: #5DA341;
+}
+
+div.attribute-6 {
+    background-color: #CB9D28;
+}
+
+div.attribute-7 {
+    background-color: #8E5628;
+}
+
+div.attribute-8 {
+    background-color: #AE9D75;
+}
+
+div.attribute-9 {
+    background-color: #808080;
+}
+
+img.bullet-icon {
+    height: 50px;
+}
+
+img.bullet-property {
+    height: 25px;
+}
+
+img.attribute-icon {
+    width: 64px;
+}
+
+img.effect-icon {
+    width: 64px;
+}
+
+img.skill-icon {
+    width: 64px;
+}
+
+img.weakness-attribute {
+    --stroke-pos: 2px;
+    --stroke-neg: -2px;
+    --stroke-color: #FFA900;
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color)) drop-shadow(var(--stroke-neg) 0 var(--stroke-color)) drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color)) drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color));
+}
+
+img.resistance-attribute {
+    --stroke-pos: 2px;
+    --stroke-neg: -2px;
+    --stroke-color: #0095DF;
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color)) drop-shadow(var(--stroke-neg) 0 var(--stroke-color)) drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color)) drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color));
+}
+
+.text-highlight-buff {
+    color: forestgreen;
+}
+
+.text-highlight-debuff {
+    color: crimson;
+}
+
+.text-highlight-support {
+    color: darkgoldenrod;
+}
+
+.text-highlight-allies {
+    color: darkgreen;
+}
+
+.text-highlight-enemies {
+    color: darkred;
+}
+
+.world-indicator-bar {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    background-color: #48606A;
+    border-radius: 50px;
+}
+
+.world-indicator-circle {
+    position: absolute;
+    height: 80%;
+    background-color: #33434C;
+    border-radius: 50px;
+    aspect-ratio: 1;
+}
+
+.world-indicator-letter {
+    font-size: 24pt;
+    color: #ffffff;
+}
+
+.background-layer {
+    pointer-events: none;
+    position: fixed;
+    object-fit: cover;
+    width: 100lvw;
+    max-width: 100%;
+    height: 100lvh;
+    z-index: -3;
+}
+
+.background-fade {
+    animation: background-layer-fade;
+    animation-duration: 1s;
+}
+
+@keyframes background-layer-fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.lostword-logo-container {
+    position: fixed;
+    width: 100lvw;
+    height: 100lvh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.lostword-logo-counterclockwise {
+    animation-direction: reverse;
+}
+
+.lostword-logo {
+    position: absolute;
+    width: 40lvw;
+    filter: invert(1);
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-name: touhou-lostword-rotation;
+    animation-timing-function: linear;
+}
+
+@keyframes touhou-lostword-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@font-face {
+    font-family: 'MgOpen_Cosmetica';
+    src: url('WebFont.ttf') format('truetype'),
+}
+
+.unit-class-label {
+    background-color: lemonchiffon;
+    border-color: orange;
+    border-width: 2px;
+    border-style: groove;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.title-header-text {
+    color: #DA9F38;
+    position: relative;
+}
+
+.character-thumbnail-portrait {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border-width: 3px;
+    border-color: tomato;
+    border-style: solid;
+}
+
+div.card {
+    background-color: #FFFFFFD0;
+}
+
+li.list-group-item {
+    background-color: unset;
+}
+
+.carousel-inner .item,
+.carousel-inner .item.active,
+.carousel-inner .item img {
+    margin: auto;
+    padding: 0px;
+}
+
+.carousel-inner>.item {
+    width: 100%;
+
+}
+
+.label-input-grid {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns:
+        min-content auto;
+}
+
+.grid-spanner {
+    grid-column: 1/-1;
+}
+
+.bullet-property-grid {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-rows: 50% 50%;
+}
+
+.bullet-property-grid > img {
+    grid-row: 1/-1;
+    grid-column: 1;
+}
+
+.bullet-property-grid > span {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.bullet-effect-grid {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-rows: 50% 50%;
+}
+
+.bullet-effect-grid > img {
+    grid-row: 1/-1;
+    grid-column: 1;
+}
+
+.bullet-effect-grid > span {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.section-header {
+    border-width: 6px;
+    border-style: ridge groove groove ridge;
+    border-color: #ffffffd0;
+    border-bottom: 6px black ridge;
+    background-color: #ffffffd0;
+}
