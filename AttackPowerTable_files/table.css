@@ -1,0 +1,65 @@
+table {
+    background-color: #ffffffdd;
+}
+
+table.poison {
+    background-color: #d9ead3dd;
+}
+
+table.paralyze {
+    background-color: #fff2ccdd;
+}
+
+table.blind {
+    background-color: #d9d2e9dd;
+}
+
+table.burn {
+    background-color: #f4ccccdd;
+}
+
+table.freeze {
+    background-color: #c9daf8dd;
+}
+
+
+th, td { white-space: nowrap; }
+
+td {
+    font-size: 20px;
+}
+
+td.highlight {
+    background-color: #00000020;
+}
+
+tr:hover {
+    background-color: #00000020 !important;
+}
+
+.row-portrait {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border-width: 3px;
+    border-color: tomato;
+    border-style: solid;
+}
+
+.row-prayer {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.row-header {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.image-responsive {
+    margin: 0 auto;
+}
+
+div.dt-scroll-body {
+    overflow-y: hidden !important;
+}

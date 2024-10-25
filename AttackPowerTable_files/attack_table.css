@@ -1,0 +1,7 @@
+:root {
+    --low-killer-display: unset;
+}
+
+.low-killer {
+    display: var(--low-killer-display);
+}

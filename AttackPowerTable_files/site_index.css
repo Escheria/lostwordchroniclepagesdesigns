@@ -1,0 +1,54 @@
+.notebook-button {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    z-index: 1;
+    transition-duration: 500ms;
+    transition-property: filter;
+}
+
+.site-index-button {
+    padding: 0;
+    border: 0;
+    background-color: #FFFFFF00;
+}
+
+.site-index-container {
+    display: grid;
+    justify-items: left;
+    z-index: 5;
+    width: 0;
+}
+
+.site-index-option-row {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 100vw;
+    transform: translateX(-100vw);
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+
+.site-index-option-row-bar {
+    border-bottom: 2px solid #DA9F38;
+    border-top: 2px solid #DA9F38;
+    background-color: #FFFFFFE0;
+}
+
+.site-index-option-row-triangle {
+  box-sizing: border-box;
+  width: 4%;
+  aspect-ratio: 1/1;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+  background-color: #DA9F38;
+}
+
+.index-dropdown-button {
+    color: #DA9F38;
+}
+
+.index-dropdown-text {
+    font-size: 18pt;
+}
+
+.site-index-container:focus-within > .site-index-option-row { transform: translateX(0); }
+.site-index-container:focus-within > .notebook-button { filter: brightness(0.5); }

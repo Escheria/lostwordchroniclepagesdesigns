@@ -1,0 +1,33 @@
+.top-menu-bar-container {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.top-menu-bar-row {
+    border-bottom: 2px solid #DA9F38;
+    border-top: 2px solid #DA9F38;
+    background-color: #FFFFFFE0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.top-menu-option {
+    border-top: 2px inset #DA9F38;
+    background-color: #FFFFFFE0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.top-menu-bar-triangle {
+  box-sizing: border-box;
+  width: 10vw;
+  aspect-ratio: 2/1;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background-color: #DA9F38;
+}
+
+.index-dropdown-button {
+    font-size: min(2rem, 2vw);
+    color: #DA9F38;
+}
